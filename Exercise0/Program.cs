@@ -21,6 +21,9 @@ namespace Exercise0
                         case 1:
                             Exercise1();
                             break;
+                        case 2:
+                            Exercise2();
+                            break;
                         //more cases as you make progress doing the exercises
 
                         case -1:
@@ -47,6 +50,11 @@ namespace Exercise0
         }//main method
 
         static void Exercise1()
+        {
+            Console.WriteLine("replace this with exercises");
+        }
+
+        static void Exercise2()
         {
             Console.WriteLine("replace this with exercises");
         }
