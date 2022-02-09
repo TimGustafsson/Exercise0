@@ -24,6 +24,9 @@ namespace Exercise0
                         case 2:
                             Exercise2();
                             break;
+                        case 3:
+                            Exercise3();
+                            break;
                         //more cases as you make progress doing the exercises
 
                         case -1:
@@ -50,14 +53,42 @@ namespace Exercise0
         }//main method
 
         static void Exercise1()
-        {
-            Console.WriteLine("replace this with exercises");
-        }
+        {   
+            Console.WriteLine("What is your name?");
 
+            string userName = Console.ReadLine();
+
+            Console.WriteLine("Hello " + userName + "! I'm glad to inform you that you are the test subject of my very first assignment!");
+
+        }//Exercise1
+            
         static void Exercise2()
         {
-            Console.WriteLine("replace this with exercises");
-        }
+            DateTime dateTimeNow = DateTime.Now;
+
+            Console.WriteLine("Todays date is " + dateTimeNow.ToShortDateString());
+
+            DateTime dateTimeTomorrow = DateTime.Now.AddDays(1);
+
+            Console.WriteLine("Tomorrows date is " + dateTimeTomorrow.ToShortDateString());
+
+            DateTime dateTimeYesterday = DateTime.Now.AddDays(-1);
+
+            Console.WriteLine("Yesterdays date was " + dateTimeYesterday.ToShortDateString());
+
+        }//Exercise2
+
+        static void Exercise3()
+        {
+            Console.Write("Enter your first name:");
+
+            string userName = Console.ReadLine();
+
+            Console.Write("Enter your last name:");
+
+            string userLastname = Console.ReadLine();
+
+        }//Exercise3
 
     } //class
 }//namespace
